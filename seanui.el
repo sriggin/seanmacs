@@ -43,7 +43,8 @@
 (require 'color)
 
 (use-package sublime-themes
-  :ensure t)
+  :ensure t
+  :config (load-theme 'spolsky t))
 
 (use-package rainbow-delimiters
   :ensure t
@@ -126,7 +127,7 @@
               company-dabbrev-code-ignore-case nil
               company-dabbrev-downcase nil
               company-idle-delay 0.2
-              company-minimum-prefix-length 0)
+              company-minimum-prefix-length 1)
   :config (global-company-mode))
 
 (use-package yasnippet
